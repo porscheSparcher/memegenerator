@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Meme Gen</h1>
+            <h2>(at your own risk!)</h2>
+        </div>
+        <form class="form">
+            <div id="textAndImage">
+                <input type="text" id="topText" placeholder="Top-Text">
+                <br><br>
+                <input type="text" id="bottomText" placeholder="Bottom-Text">
+                <br><br>
+                <div id="images">
+                    <input type="text" id="imageURL" placeholder="Image URL">
+                </div>
+            </div>               
+            
+            <button id="btn" type="submit">Generate Meme</button>
+            <button id="remove" onclick="removeImg()">Remove Image</button>
+        </form>
+        <div id="displayed_images">
+            <div class="image-container">
+            <div class="image-div"></div>
+            </div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
